@@ -1,0 +1,17 @@
+
+<div *ngFor="let post of posts">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">{{post.title}}</span>
+          <p>{{post.body}}</p>
+        </div>
+        <div class="card-action">
+          <a [routerLink]="['/post', post.id]" class="grey-text text-lighten-2">&raquo; Read more</a>
+        </div>
+      </div>
+  </div>
+<div class="link">
+<a class="link-new" [routerLink]="['/posts/new']">Add New Post</a>
+</div>
+  
+  

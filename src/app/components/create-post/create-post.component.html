@@ -1,0 +1,21 @@
+<h3 class="text-center">Create Post</h3>
+<div class=form>
+<form ngNativeValidate (submit)="save()">
+  <div class="row">
+    <div>
+      <input class="input-field" [(ngModel)]="post.title" placeholder="Title" name="inputTitle" type="text" required>
+    </div>
+  </div>
+  <div class="row">
+    <div>
+      <textarea class="input-field" [(ngModel)]="post.body" placeholder="Body" name="inputBody" required></textarea>
+    </div>
+  </div>
+  <button routerLink="/" class="btn">Back
+   
+  </button>
+  <button class="btn" type="submit" name="action">Save
+   
+  </button>
+</form>
+</div>

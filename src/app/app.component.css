@@ -1,0 +1,13 @@
+.navbar {
+    background-color:#616161;
+    color: white;
+   display: flex;
+   flex-direction: flex-start;
+   justify-content: center;
+   padding: 10px 10px 10px 10px;
+}
+.brand-logo{
+    font-size: 25px;
+    text-decoration: none;
+
+}

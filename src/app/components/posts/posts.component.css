@@ -1,0 +1,42 @@
+.card-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.card{
+    max-width: auto;
+    margin: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    line-height: 2rem;
+    border: 1px solid #eeeeee;
+}
+.card:hover{
+    border:1px solid #bdbdbd;
+}
+.card-action a{ 
+    background-color: #607d8b;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+
+}
+.link{
+    display: flex;
+    justify-content: center;
+}
+.link-new{
+    text-decoration: none;
+    background-color: #ff5252;
+    color: white;
+    padding: 1rem;
+    font-size: 30px;
+    font-weight: bold; 
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+.link-new:hover{
+    background-color : #ff1744
+    ;
+}
