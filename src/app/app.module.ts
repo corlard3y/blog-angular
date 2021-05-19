@@ -11,6 +11,7 @@ import { PostsComponent } from './components/posts/posts.component';
 import { PostsService } from './components/posts/posts.service';
 import { CreatePostComponent } from './components/create-post/create-post.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { CommentFormComponent } from './components/comment-form/comment-form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     PostComponent,
     PostsComponent,
     CreatePostComponent,
-    NavbarComponent
+    NavbarComponent,
+    CommentFormComponent
   ],
   imports: [
     BrowserModule,

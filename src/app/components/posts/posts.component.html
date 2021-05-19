@@ -1,11 +1,11 @@
 
 <div *ngFor="let post of posts">
-      <div class="card">
-        <div class="card-content">
+      <div class="card font-muli">
+        <div class="card-content text-gray-700">
           <span class="card-title">{{post.title}}</span>
-          <p>{{post.body}}</p>
+          <p class="body text-xs sm:text-sm">{{post.body}}</p>
         </div>
-        <div class="card-action">
+        <div class="card-action mt-8">
           <a [routerLink]="['/post', post.id]" class="grey-text text-lighten-2">&raquo; Read more</a>
         </div>
       </div>
