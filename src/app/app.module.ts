@@ -12,6 +12,7 @@ import { PostsService } from './components/posts/posts.service';
 import { CreatePostComponent } from './components/create-post/create-post.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CommentFormComponent } from './components/comment-form/comment-form.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CommentFormComponent } from './components/comment-form/comment-form.com
     PostsComponent,
     CreatePostComponent,
     NavbarComponent,
-    CommentFormComponent
+    CommentFormComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
