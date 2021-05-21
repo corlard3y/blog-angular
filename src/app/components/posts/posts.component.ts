@@ -11,10 +11,12 @@ export class PostsComponent implements OnInit {
 
   posts: Post[];
 
+  
   constructor(private postsService: PostsService) { 
     this.posts =[];
   }
-
+  p: number = 1;
+  // posts: any[] = this.posts;  
 
 
   ngOnInit(): void {

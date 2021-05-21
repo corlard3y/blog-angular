@@ -13,6 +13,7 @@ import { CreatePostComponent } from './components/create-post/create-post.compon
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CommentFormComponent } from './components/comment-form/comment-form.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    NgxPaginationModule,
     HttpClientModule,
     FormsModule,
     HttpClientInMemoryWebApiModule.forRoot(

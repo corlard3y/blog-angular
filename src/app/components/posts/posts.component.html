@@ -1,17 +1,32 @@
+<div class="">
 
-<div *ngFor="let post of posts">
+
+<div class="link">
+  <a class="link-new bg-white border border-gray-500 text-gray-700 hover:bg-gray-500 hover:text-white" [routerLink]="['/posts/new']">Add New Post</a>
+</div>
+
+
+<div *ngFor="let post of posts | paginate : {
+  itemsPerPage: 4,
+  currentPage : p
+}">
       <div class="card font-muli">
         <div class="card-content text-gray-700">
           <span class="card-title">{{post.title}}</span>
           <p class="body text-xs sm:text-sm">{{post.body}}</p>
         </div>
         <div class="card-action mt-8">
-          <a [routerLink]="['/post', post.id]" class="grey-text text-lighten-2">&raquo; Read more</a>
+          <a [routerLink]="['/post', post.id]" class="font-muli text-xs grey-text text-lighten-2 rounded-lg">&raquo; Read more</a>
         </div>
       </div>
   </div>
-<div class="link">
-<a class="link-new" [routerLink]="['/posts/new']">Add New Post</a>
+
 </div>
+
+  <div class="flex flex-row justify-center">
+  <pagination-controls (pageChange)="p = $event" ></pagination-controls>
+  </div>
+
+
   
   
