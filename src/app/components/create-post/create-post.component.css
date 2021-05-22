@@ -24,6 +24,7 @@ textarea{
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    outline: none;
 }
 .btn{
     background-color: #607d8b;

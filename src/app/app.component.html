@@ -1,11 +1,20 @@
-<app-navbar></app-navbar>
+<app-navbar [openNav] = 'boundedValue'></app-navbar>
+<div id="myNav" className="overlay">
+  <a href="#!" className="closebtn" (click)="closeNav()">&times;</a>
+  <div className="overlay-content">
+    <a href="#!" (click)="closeNav()">Home</a>
+    <a href="#blog" (click)="closeNav()">Blog</a>
+    <a href="#contact" (click)="closeNav()">Contact</a>
+    <a href="#!" (click)="closeNav()">Support</a>
+  </div>
+</div>
 
 
-    <div class="container mt-20">
+    <div class="w-full mt-20">
         <router-outlet></router-outlet>
     </div>
 
     
-    <div>
+    <div class="">
       <app-footer></app-footer>
     </div>
