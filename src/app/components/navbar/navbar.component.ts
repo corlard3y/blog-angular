@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,16 +6,26 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  
-  @Input() public openNav: (myElement:any) => void;
 
   constructor() { }
+  myElement = window.document.getElementById("myNav");
 
-  // onEvent(){
-  //   this.openNav(myElement);
-  // }
+  closeNav() {
+    if(
+      document.getElementById("myNav")
+      ){
+     document.getElementById("myNav")!.style.width = "0%";
+  }
+}
+ openNav() {
+  if(
+    document.getElementById("myNav")
+    ){
+   document.getElementById("myNav")!.style.width = "100%";
+}
+}
 
   ngOnInit(): void {
   }
-
+ 
 }

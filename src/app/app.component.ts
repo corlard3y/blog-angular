@@ -8,21 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'blog-angular';
 
-  myElement = document.getElementById("myNav");
-  public boundedValue= this.openNav.bind(this);
+}
 
-  closeNav() {
-    if(
-this.myElement
-      ){
-    this.myElement.style.width = "0%";
-  }
-}
-public openNav(myElement:any):void {
-  if(
-this.myElement
-    ){
-  this.myElement.style.width = "0%";
-}
-}
-}
